@@ -3,7 +3,7 @@ import pandas as pd
 from graphviz import Digraph
 
 # Load and clean
-df = pd.read_excel("SurveyFlow\\encoded_df.xlsx")
+df = pd.read_excel("encoded_df.xlsx")
 concat_col = df.columns[-1]
 num_questions = 9
 df[concat_col] = df[concat_col].astype(str).str.zfill(num_questions)
